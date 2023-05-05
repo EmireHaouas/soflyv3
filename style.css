@@ -1,0 +1,416 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 48px;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 24px;
+}
+
+.grid-col {
+  /* background: red; */
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* HEADINGS */
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+h1.heading-primary {
+  text-align: left;
+}
+
+h1.h1_intro {
+
+  color: rgba(0, 118, 186, 0.87);
+  font-size: 64px;
+  /* margin-bottom: 0; */
+  text-align: left;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h2.h2_intro {
+  font-size: 24px;
+  margin-bottom: 40px;
+  background-color: #fff !important;
+  text-transform: inherit;
+  text-align: left;
+  color: inherit;
+  margin: 32px 0;
+  font-weight: 500;
+}
+
+.heading-primary {
+  color: #437cb2;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.header {
+  max-width: 1400px;
+  background: #437cb2;
+  padding: 12px;
+  margin: 8px auto;
+}
+
+.header-box {
+  /* background: #3f87c7; */
+  padding: 8px;
+  padding-bottom: 0.4px;
+  margin-bottom: 20px;
+}
+
+.justifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-8 {
+  padding-bottom: 16px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+h2 {
+  background: #437cb2;
+}
+
+.color-red {
+  color: #BD262B;
+}
+
+.para1_intro {
+  max-width: 700px;
+  font-size: 18px;
+    /* text-align: justify; */
+    line-height: 1.3 !important;
+  }
+
+  .para1_intro p,
+  .tool-container p {
+    font-weight: 400 !important;
+    margin: 16px 0;
+}
+
+ul.list-container {
+  /* max-width: 40em; */
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.list-container li {
+  text-transform: inherit;
+}
+
+ul.list-container li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . .  ';
+}
+ul.list-container span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+
+ul.list-container span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+ul.list-container li {
+  color: #1a1919;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 4px;
+}
+
+ul.list-container li span:nth-child(1) {
+    /* font-weight: 600; */
+}
+
+ul.list-container li span:nth-child(2) {
+    color: #006DA6;
+    font-family: circular;
+}
+
+/*  */
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . ';
+}
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+.horizontal-line {
+  border: 1px solid #000;
+  margin: 12px auto;
+  width: 80%;
+  height: 1px;
+}
+
+ul li, .element {
+  color: #1a1919;
+  font-size: 20px;
+  /* font-size: 18px; */
+  font-weight: 400;
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer p.note {
+  color: #bd262b;
+}
+
+/*  */
+.bg-cover-img {
+  background-image: url('./pages/imgs/a4-cover-with-sheets-logo-sofly.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150vh;
+}
+
+.aircraft-checklist-pro-img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+img.img {
+  width: 100%;
+}
+
+.eula {
+  align-items: center;
+}
+
+.eula p {
+  font-size: 15px;
+}
+
+.version-box {
+  font-size: 14px;
+}
+
+.version-box p {
+  padding: 6px 0;
+}
+
+.version {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.initial-release {
+  margin-top: 8px;
+}
+
+.storm-by-sofly {
+  height: 110vh;
+  background: url('./imgs/STORM-by-SoFly.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.storm-by-sofly h3 {
+  position: absolute;
+  top: 14%;
+  left: 2%;
+  margin-bottom: 16x;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.storm-by-sofly a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #006DA6;
+  padding: 10px 100px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.storm-by-sofly p {
+  color: #fff;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  .eula.grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  ul li,
+  .element {
+    color: #1a1919;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 2px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 748px) {
+  ul.list-container li,
+  .element {
+    font-size: 16px !important;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  ul.leaders {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container.grid.grid--1-cols.justify-center > div {
+    min-width: 500px !important;
+  }
+}
+
+.eula h2.h2_intro,
+.disclaimer h2.h2_intro {
+  margin-top: 16px!important;
+  margin-bottom: 4px !important;
+}
